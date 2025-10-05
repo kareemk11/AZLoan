@@ -86,7 +86,7 @@ graph TD
     E -->|System: Transfer Funds| F[Loan Funded & Payments Created]
     F -->|"POST /loans/`{id}`/pay/"| G[Process Payments]
     G -->|All Payments Done| H[Loan Completed]
-
+```
 
 ## 📝 Business Logic Highlights
 
