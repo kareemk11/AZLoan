@@ -23,7 +23,7 @@ A Django REST API for managing peer-to-peer loans between borrowers and lenders,
 2. **Clone the Repository**:
 
     ```bash
-    # git clone [repository-url]
+    # git clone (https://github.com/kareemk11/AZLoan.git)
     # cd AZLoan
     ```
 
