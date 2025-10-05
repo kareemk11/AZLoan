@@ -87,6 +87,7 @@ graph TD
     F -->|POST /loans/{id}/pay/| G[Process Payments]
     G -->|All Payments Done| H[Loan Completed]
 
+
     ## 📝 Business Logic Highlights
 
     - **Loan Creation:** Only users with the role `borrower` can create loans. The initial status is always `pending`.
@@ -98,14 +99,6 @@ graph TD
 - Creates all required monthly `Payment` objects using an amortization schedule.
 - Updates the loan status to **funded**.
 
-**Offer Acceptance:**
-
-- Verifies the lender has sufficient balance.
-- Deducts the loan amount plus the `lenme_fee` from the lender's balance.
-- Creates all required monthly `Payment` objects using an amortization schedule.
-- Updates the loan status to **funded**.
-
----
 
 **Payment Processing:**
 
