@@ -88,7 +88,7 @@ graph TD
     G -->|All Payments Done| H[Loan Completed]
 
 
-    ## 📝 Business Logic Highlights
+## 📝 Business Logic Highlights
 
     - **Loan Creation:** Only users with the role `borrower` can create loans. The initial status is always `pending`.
 
