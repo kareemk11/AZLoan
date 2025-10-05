@@ -81,7 +81,7 @@ The system enforces strict role-based access: **Borrowers** initiate loans and m
 graph TD
     A[Borrower Creates Loan] -->|POST /api/loans/| B[Pending Loan]
     B -->|GET /api/loans/open/| C[Lender Views Loans]
-    C -->|POST /api/offers/| D[Lender Makes Offer]
+    C -->|POST /api/offers/| D[Lender Makes Offer] 
     D -->|POST /loans/{id}/accept_offer/| E[Borrower Accepts Offer]
     E -->|System: Transfer Funds| F[Loan Funded & Payments Created]
     F -->|POST /loans/{id}/pay/| G[Process Payments]
